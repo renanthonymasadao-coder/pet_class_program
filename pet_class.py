@@ -39,3 +39,18 @@ class Pet:
             return "Tweet Tweet!"
         else:
             return "Cute sound!"
+
+    # DISPLAY METHOD
+    def display_pet_info(self):
+
+        print("\n===================================")
+        print("        PET INFORMATION")
+        print("===================================")
+
+        print(f"Pet Name     : {self.__name}")
+        print(f"Animal Type  : {self.__animal_type}")
+        print(f"Pet Age      : {self.__age}")
+
+        print(f"Pet Sound    : {self.pet_sound()}")
+
+        print("===================================")
