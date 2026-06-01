@@ -15,7 +15,7 @@ class Pet:
 
     def set_age(self, age):
         self.__age = age
-        
+
     # GET METHODS
     def get_name(self):
         return self.__name
@@ -25,3 +25,17 @@ class Pet:
 
     def get_age(self):
         return self.__age
+
+   # EXTRA METHOD
+    def pet_sound(self):
+
+        animal = self.__animal_type.lower()
+
+        if animal == "dog":
+            return "Woof Woof!"
+        elif animal == "cat":
+            return "Meow Meow!"
+        elif animal == "bird":
+            return "Tweet Tweet!"
+        else:
+            return "Cute sound!"
